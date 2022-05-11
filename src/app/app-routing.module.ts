@@ -14,7 +14,6 @@ const routes: Routes = [
     path:'comics',
     loadChildren:()=>import('./comics/comics.module').then(m=>m.ComicsModule)
   }
-
 ];
 
 

@@ -1,0 +1,18 @@
+<div *ngIf="!character;else divHeroe">
+    <h2>cargando...</h2>
+</div>
+<ng-template #divHeroe>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="{{character.thumbnail.path }}.jpg" alt="{{character.name}}">
+        </div>
+        <div class="col-sm-6">
+            <h3>{{character.name}}</h3>
+            <div>
+                <p>
+                    {{character.description}}
+                </p>
+            </div>
+        </div>
+    </div>
+</ng-template>
